@@ -1,9 +1,11 @@
 package com.akkuma.kanazawa.loader.entity;
 
+import java.util.List;
+
 public class Genre {
     private int id;
     private String name;
-    private String subgenres;
+    private List<Subgenre> subgenres;
 
     public int getId() {
         return id;
@@ -21,11 +23,11 @@ public class Genre {
         this.name = name;
     }
 
-    public String getSubgenres() {
+    public List<Subgenre> getSubgenres() {
         return subgenres;
     }
 
-    public void setSubgenres(String subgenres) {
+    public void setSubgenres(List<Subgenre> subgenres) {
         this.subgenres = subgenres;
     }
 }
