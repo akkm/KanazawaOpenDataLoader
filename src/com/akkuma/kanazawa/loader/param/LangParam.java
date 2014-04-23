@@ -12,4 +12,9 @@ public enum LangParam {
     public String getParamString() {
         return paramString;
     }
+    
+    @Override
+    public String toString() {
+        return paramString;
+    }
 }

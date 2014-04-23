@@ -10,10 +10,10 @@ import com.akkuma.kanazawa.loader.entity.request.RequestEntityInterface;
 import com.akkuma.kanazawa.loader.entity.response.ResponseEntityInterface;
 import com.google.gson.Gson;
 
-public class KanazawaOpenDataApiLoader<T extends ResponseEntityInterface> {
+public class KanazawaOpenDataApiLoader {
 
     @SuppressWarnings("unchecked")
-    public T load(RequestEntityInterface req) throws IOException {
+    public <T extends ResponseEntityInterface> T load(RequestEntityInterface req) throws IOException {
 
         URL url = new URL(req.getRequestUrl());
         HttpURLConnection con = (HttpURLConnection) url.openConnection();

@@ -11,7 +11,7 @@ import com.akkuma.kanazawa.loader.param.LangParam;
 class Test {
     public static void main(String[] args) {
         
-        KanazawaOpenDataApiLoader<GenresListResponse> aa = new KanazawaOpenDataApiLoader<GenresListResponse>();
+        KanazawaOpenDataApiLoader aa = new KanazawaOpenDataApiLoader();
         
         GenresListRequest req = new GenresListRequest();
         
